@@ -178,7 +178,7 @@
 
       try {
         if (sessionStorage.getItem(AUTH_KEY) === '1') {
-          window.location.replace(new URL('Veera.html', window.location.href).href);
+          window.location.replace(new URL('index.html', window.location.href).href);
           return;
         }
       } catch (_) {}
@@ -206,7 +206,7 @@
           sessionStorage.setItem(EMAIL_KEY, emailInput.value);
           status.style.color = '#9bd6ad';
           status.textContent = 'Welcome to Veera TV…';
-          window.setTimeout(() => window.location.replace(new URL('Veera.html', window.location.href).href), 220);
+          window.setTimeout(() => window.location.replace(new URL('index.html', window.location.href).href), 220);
         } catch (_) {
           status.textContent = 'Browser session storage is unavailable. Please enable site storage and try again.';
         }
